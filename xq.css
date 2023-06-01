@@ -1,0 +1,323 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+body {
+    background-color: white;
+    background: url(./徐祺个人简历/images/微信图片_20230531203342\(1\)\(1\).jpg);
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid beige;
+    background-color: rgb(73, 78, 79);
+    background: url(./徐祺个人简历/images/微信图片_20230531211348\(1\).jpg);
+}
+
+.nav-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    height: 40px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 50px;
+    color: black;
+}
+
+.nav-box .nav {
+    display: flex;
+    font-size: 16px;
+    color: rgb(71, 34, 34);
+}
+
+.nav-box .nav li {
+    padding-left: 40px;
+}
+
+.nav-box .nav a.on,
+.nav-box .nav a:hover {
+    color: black;
+    padding-bottom: 0px;
+    border-bottom: 2px solid red;
+}
+
+.banner{
+    width: 1280px;
+    margin: 0 auto;
+    height: 312px;
+    align-items: center;
+    text-align: center;
+    line-height: 312px;
+    color: navy;
+    font-size: 40px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: bold;
+    background: url(./徐祺个人简历/images/QQ图片20230531155439\(1\).jpg);
+}
+
+.introduce {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+.introduce-main {
+    display: flex;
+}
+
+.introduce-tit {
+    line-height: 50px;
+    font-size: 28px;
+    font-weight: 600;
+    padding-bottom: 30px;
+    color:rgb(16, 28, 4);
+}
+
+.introduce-main .l {
+    margin-right: 40px;
+}
+
+.introduce.l img {
+    border-radius: 50%;
+}
+
+.introduce-main .r {
+    line-height: 40px;
+    font-size: 20px;
+    color: darkcyan;
+    margin-left: 50px;
+}
+.hobby-box{
+    display: flex;
+}
+.hobby-box .r{
+    margin-left: 50px;
+    line-height: 50px;
+    color: rgb(32, 55, 56);
+    font-size: 20px;
+}
+.skill{
+    width: 50%;
+    margin-bottom: 40px;
+}
+.skill-tit{
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(251, 167, 210);
+    display: flex;
+    justify-content: space-between;
+}
+.progress{
+    width: 100%;
+    height: 7px;
+    border-radius: 7px;
+    background-color:rgb(105, 75, 32);
+    position: relative;
+    overflow: hidden;
+}
+.progress-in{
+    position: absolute;
+    height: 7px;
+    left:0;
+    top: 0;
+    background-color: rgb(201, 221, 215);
+}
+.foot-box{
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+    color: beige;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: black;
+    color: aliceblue;
+}
+.introduce.l img.code{
+    border-radius: 0;
+}
+.myform{
+    margin-top: 50px;
+}
+.inp-box{
+    width: 100%;
+    display: flex;
+    min-height: 80px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.inp{
+    flex:1;
+    height: 40px;
+    text-indent: 10px;
+    border: 1px solid white;
+    font-size: 20px;
+    margin: 0 20px;
+}
+.msg{
+    flex:1;
+    margin: 0 20px;
+    border: 1px solid white;
+    font-size: 20px;
+    text-indent: 10px;
+    line-height: 40px;
+    padding: 10px 0;
+    min-height: 100px;
+}
+.but{
+    margin: 20px;
+    width: 150px;
+    height: 42px;
+    line-height: 42px;
+    border: none;
+    color: rgb(226, 233, 233);
+    text-align: center;
+    background:lightblue;
+    cursor: pointer;
+    font-size: 20px;
+}
+.but:hover{
+    opacity: 0.8;
+}
+.main-box{
+    width: 20px auto;
+    width: 1300px;
+}
+.flex-box{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.block{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.desc{
+    position: absolute;
+    opacity: 0;
+    z-index: 3;
+    top:0;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    cursor: pointer;
+    background: rgba(0,0,0,0.5);
+    transition: opacity 0.5s ease-in;
+    color: rgb(53, 26, 123);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 300px;
+    letter-spacing: 3px;
+}
+.block:hover .desc{
+    opacity: 1;
+}
+.block .pic{
+    transition: all 0.3s ease-in;
+}
+.block:hover img{
+    transform: scale(1.2);
+}
+table {
+    margin-left:      20px;
+    margin-right:     20px;
+    border:           thin solid black;
+    caption-side:     bottom;
+    border-collapse:  collapse;
+    display: flex;
+    align-items: center;
+  }
+  
+  table table th {
+    background-color: white;
+  }
+  
+  td, th {
+    border:           thin dotted gray;
+    padding:          50px;
+  }
+  
+  th {
+    background-color: #cc6600;
+  }
+  
+  
+  .cellcolor {
+    background-color: #fcba7a;
+  }
+  
+
+/*移动端适配*/
+@media screen and (max-width: 1199px) {
+    body{
+        min-width: 100%;
+    }
+    .nav-box span{
+        display: none;
+    }
+    .banner{
+        width: 100%;
+        height: 152px;
+        line-height: 152px;
+        font-size: 18px;
+    }
+    .introduce{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .introduce.l img{
+        width: 120px;
+    }
+    .main-box{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+    .inp-box{
+        flex-wrap: wrap;
+    }
+    .inp-box input{
+        margin-bottom: 20px;
+    }
+    .flex-box{
+        flex-wrap: wrap;
+    }
+    .block{
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        margin-bottom: 20px;
+    }
+    .desc{
+        line-height: 150px;
+        font-size: 12p1;
+    }
+    .introduce-tit{
+        font-size: 18px;
+    }
+}
+    
+
